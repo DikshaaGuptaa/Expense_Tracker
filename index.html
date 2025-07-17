@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClearSpend – Smart Expense Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">💠 ClearSpend</div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Track Your Expenses</h1>
+
+    <form id="expense-form">
+      <input type="text" id="description" placeholder="Expense Description" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
+      <input type="date" id="date" required />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div class="month-selector">
+      <label for="month-select">View Month:</label>
+      <select id="month-select"></select>
+    </div>
+
+    <ul id="expense-list"></ul>
+
+    <div class="total">Total for <span id="current-month-label"></span>: ₹<span id="total">0.00</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
